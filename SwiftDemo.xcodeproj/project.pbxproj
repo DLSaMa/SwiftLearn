@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7837CDFB24C73E1C008641A3 /* lazyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7837CDFA24C73E1B008641A3 /* lazyTest.swift */; };
 		7837CDFF24C73E3C008641A3 /* OCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CDFE24C73E3C008641A3 /* OCFile.m */; };
+		7837CE0124C73F98008641A3 /* VisitControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7837CE0024C73F98008641A3 /* VisitControl.swift */; };
 		78CF124424BDED1B009E1BF3 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CF124324BDED1A009E1BF3 /* TestSwift.swift */; };
 		78DCBA2724B4B0F5001819A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DCBA2624B4B0F5001819A5 /* AppDelegate.swift */; };
 		78DCBA2924B4B0F5001819A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DCBA2824B4B0F5001819A5 /* SceneDelegate.swift */; };
@@ -43,6 +44,7 @@
 		7837CDFC24C73E3B008641A3 /* SwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		7837CDFD24C73E3C008641A3 /* OCFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCFile.h; sourceTree = "<group>"; };
 		7837CDFE24C73E3C008641A3 /* OCFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCFile.m; sourceTree = "<group>"; };
+		7837CE0024C73F98008641A3 /* VisitControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitControl.swift; sourceTree = "<group>"; };
 		78CF124324BDED1A009E1BF3 /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 		78DCBA2324B4B0F5001819A5 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DCBA2624B4B0F5001819A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				78DCBA5624B4CC8A001819A5 /* ClassA.swift */,
 				78CF124324BDED1A009E1BF3 /* TestSwift.swift */,
 				7837CDFA24C73E1B008641A3 /* lazyTest.swift */,
+				7837CE0024C73F98008641A3 /* VisitControl.swift */,
 				7837CDFD24C73E3C008641A3 /* OCFile.h */,
 				7837CDFE24C73E3C008641A3 /* OCFile.m */,
 				78DCBA2C24B4B0F5001819A5 /* Main.storyboard */,
@@ -281,6 +284,7 @@
 				78CF124424BDED1B009E1BF3 /* TestSwift.swift in Sources */,
 				78DCBA2724B4B0F5001819A5 /* AppDelegate.swift in Sources */,
 				78DCBA5724B4CC8A001819A5 /* ClassA.swift in Sources */,
+				7837CE0124C73F98008641A3 /* VisitControl.swift in Sources */,
 				78DCBA2924B4B0F5001819A5 /* SceneDelegate.swift in Sources */,
 				7837CDFB24C73E1C008641A3 /* lazyTest.swift in Sources */,
 			);
