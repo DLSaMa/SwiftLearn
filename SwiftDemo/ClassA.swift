@@ -18,7 +18,7 @@ class ClassA: NSObject {
         
     }
     
-    func methodConvention() ->  Void{
+   public func methodConvention() ->  Void{
         print("静态方法")
     }
     
@@ -26,7 +26,7 @@ class ClassA: NSObject {
         print("私有方法")
     }
     
-    static func methodStatic() ->  Void{
+  public  static func methodStatic() ->  Void{
           print("静态方法")
       }
 
