@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7837CDFB24C73E1C008641A3 /* lazyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7837CDFA24C73E1B008641A3 /* lazyTest.swift */; };
+		7837CDFF24C73E3C008641A3 /* OCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CDFE24C73E3C008641A3 /* OCFile.m */; };
 		78CF124424BDED1B009E1BF3 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CF124324BDED1A009E1BF3 /* TestSwift.swift */; };
 		78DCBA2724B4B0F5001819A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DCBA2624B4B0F5001819A5 /* AppDelegate.swift */; };
 		78DCBA2924B4B0F5001819A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DCBA2824B4B0F5001819A5 /* SceneDelegate.swift */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7837CDFA24C73E1B008641A3 /* lazyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lazyTest.swift; sourceTree = "<group>"; };
+		7837CDFC24C73E3B008641A3 /* SwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		7837CDFD24C73E3C008641A3 /* OCFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCFile.h; sourceTree = "<group>"; };
+		7837CDFE24C73E3C008641A3 /* OCFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCFile.m; sourceTree = "<group>"; };
 		78CF124324BDED1A009E1BF3 /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 		78DCBA2324B4B0F5001819A5 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DCBA2624B4B0F5001819A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,10 +114,14 @@
 				78DCBA2A24B4B0F5001819A5 /* ViewController.swift */,
 				78DCBA5624B4CC8A001819A5 /* ClassA.swift */,
 				78CF124324BDED1A009E1BF3 /* TestSwift.swift */,
+				7837CDFA24C73E1B008641A3 /* lazyTest.swift */,
+				7837CDFD24C73E3C008641A3 /* OCFile.h */,
+				7837CDFE24C73E3C008641A3 /* OCFile.m */,
 				78DCBA2C24B4B0F5001819A5 /* Main.storyboard */,
 				78DCBA2F24B4B0FB001819A5 /* Assets.xcassets */,
 				78DCBA3124B4B0FB001819A5 /* LaunchScreen.storyboard */,
 				78DCBA3424B4B0FB001819A5 /* Info.plist */,
+				7837CDFC24C73E3B008641A3 /* SwiftDemo-Bridging-Header.h */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -202,6 +212,7 @@
 				TargetAttributes = {
 					78DCBA2224B4B0F5001819A5 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					78DCBA3824B4B0FB001819A5 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -266,10 +277,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				78DCBA2B24B4B0F5001819A5 /* ViewController.swift in Sources */,
+				7837CDFF24C73E3C008641A3 /* OCFile.m in Sources */,
 				78CF124424BDED1B009E1BF3 /* TestSwift.swift in Sources */,
 				78DCBA2724B4B0F5001819A5 /* AppDelegate.swift in Sources */,
 				78DCBA5724B4CC8A001819A5 /* ClassA.swift in Sources */,
 				78DCBA2924B4B0F5001819A5 /* SceneDelegate.swift in Sources */,
+				7837CDFB24C73E1C008641A3 /* lazyTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHREU5H63B;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
@@ -451,6 +465,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Qi.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo/SwiftDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHREU5H63B;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
@@ -469,6 +486,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Qi.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo/SwiftDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
