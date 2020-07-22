@@ -16,6 +16,9 @@ class ViewController: UIViewController {
         self.test();
         self.extentTest()
         
+        let file  = EnumFile()
+        file.test()
+        
         
         let objclassA = ClassA()
         objclassA.methodClassA()

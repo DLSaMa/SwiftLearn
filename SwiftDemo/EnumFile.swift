@@ -97,10 +97,10 @@ struct Music {
     }
 }
 
-//实现 CustomStringConvertible 协议，方便输出调试
+////实现 CustomStringConvertible 协议，方便输出调试
 extension Music: CustomStringConvertible {
     var description: String {
-        return "name: \(name) singer"
+        return "name: \(name) singer: \(singer)"
     }
 }
 
@@ -116,6 +116,16 @@ class EnumFile: NSObject {
         var enmuV3 : NWTCPConnectionState = .waiting
         
         
+        let enmuV4 = Music(name: "七里香", singer: "周杰伦")
+        print("来自枚举类的内容 --\(enmuV4)")
+        /*
+         未实现 CustomStringConvertible 协议,输出结构体名称
+         来自枚举类的内容 --Music(name: "七里香", singer: "周杰伦")
+         
+         实现 CustomStringConvertible 协议
+         来自枚举类的内容 --name: 七里香 singer: 周杰伦
+         
+         */
            
     }
     
