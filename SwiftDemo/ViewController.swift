@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -21,8 +20,8 @@ class ViewController: UIViewController {
         let objclassA = ClassA()
         objclassA.methodClassA()
         objclassA.methodConvention()
-//        objclassA.methodprivate()
-//         objclassA.methodStatic()
+        //        objclassA.methodprivate()
+        //         objclassA.methodStatic()
         ClassA.methodStatic()
         
         
@@ -57,7 +56,7 @@ class ViewController: UIViewController {
             (_ valueA:Int ,_ valueB) ->Int in
             return valueA + valueB;
         }(10,5)  //和上面的写法一样
-    
+        
         
         let a = Closures(10)
         let b = Closures00
@@ -67,25 +66,48 @@ class ViewController: UIViewController {
         
         //
         //函数式的返回值
-         func methodReturn(_ flag : Bool) -> (Int,Int) ->Int {
-             
-             func sumValues(v1:Int,v2:Int) -> Int{
-                 return v1 + v2
-             }
-             
-             func multiValues(v1:Int,v2:Int) -> Int{
-                 return v1 * v2
-             }
-             
-             return flag ? sumValues: multiValues
-         }
-         //闭包式返回
-         func closure(_ flag : Bool) -> (Int,Int) -> Int {
-             return flag ? {(v1: Int,v2:Int) -> Int in  return v1 + v2} : {(v1: Int,v2:Int) -> Int in  return v1 * v2}
-         }
-         
+        func methodReturn(_ flag : Bool) -> (Int,Int) ->Int {
+            
+            func sumValues(v1:Int,v2:Int) -> Int{
+                return v1 + v2
+            }
+            
+            func multiValues(v1:Int,v2:Int) -> Int{
+                return v1 * v2
+            }
+            
+            return flag ? sumValues: multiValues
+        }
+        //闭包式返回
+        func closure(_ flag : Bool) -> (Int,Int) -> Int {
+            return flag ? {(v1: Int,v2:Int) -> Int in  return v1 + v2} : {(v1: Int,v2:Int) -> Int in  return v1 * v2}
+        }
+        
         
         let methodValue = methodReturn(true)(10,10)
+        
+        
+        
+        
+        
+        
+        
+        //MARK:枚举
+        let emunValue = Movement.letf
+        switch emunValue {
+        case .letf:
+            print("left")
+        case .right:
+            print("right")
+        case .top:
+            print("top")
+        case .bottom:
+            print("bottom")
+        default:()
+            
+        }
+        
+        
         
         
     }
@@ -94,7 +116,7 @@ class ViewController: UIViewController {
     func test01(_value:Int) -> Void {
         
     }
-
+    
     
     
     
@@ -151,9 +173,9 @@ class ViewController: UIViewController {
         print(distance)
         
         
-//        var varA = 42
-//        varA = "This is hello"
-//        print(varA)
+        //        var varA = 42
+        //        varA = "This is hello"
+        //        print(varA)
         let varB = 42 // meaningOfLife 会被推测为 Int 类型
         let varC = 3.1415926 // pi 会被推测为 Double 类型
         
@@ -196,7 +218,7 @@ class ViewController: UIViewController {
         }
         return (currentMin, currentMax)
     }
-
+    
     
 }
 
