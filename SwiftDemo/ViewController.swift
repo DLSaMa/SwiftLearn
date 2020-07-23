@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         
         
         let objclassA = ClassA()
+        let objClosuer = inSideClass_Closure()
+        objClosuer.method00()
+        
+        
+        
         objclassA.methodClassA()
         objclassA.methodConvention()
         //        objclassA.methodprivate()
@@ -47,48 +52,7 @@ class ViewController: UIViewController {
         
         
         
-        //MARK:闭包  Closures
-        //作为一个变量 或者常量
-        
-        let Closures = {
-            (_ value:Int) ->Int in
-            return value * value;
-        }
-        
-        let Closures00 = {
-            (_ valueA:Int ,_ valueB) ->Int in
-            return valueA + valueB;
-        }(10,5)  //和上面的写法一样
-        
-        
-        let a = Closures(10)
-        let b = Closures00
-        print("闭包的值是 \(b)")
-        
-        test01(_value: 1)// 调用函数需要写形参，调用闭包不需要 只需要添值就可以
-        
-        //
-        //函数式的返回值
-        func methodReturn(_ flag : Bool) -> (Int,Int) ->Int {
-            
-            func sumValues(v1:Int,v2:Int) -> Int{
-                return v1 + v2
-            }
-            
-            func multiValues(v1:Int,v2:Int) -> Int{
-                return v1 * v2
-            }
-            
-            return flag ? sumValues: multiValues
-        }
-        //闭包式返回
-        func closure(_ flag : Bool) -> (Int,Int) -> Int {
-            return flag ? {(v1: Int,v2:Int) -> Int in  return v1 + v2} : {(v1: Int,v2:Int) -> Int in  return v1 * v2}
-        }
-        
-        
-        let methodValue = methodReturn(true)(10,10)
-        
+   
         
         
         
@@ -115,13 +79,7 @@ class ViewController: UIViewController {
         
     }
     
-    
-    func test01(_value:Int) -> Void {
-        
-    }
-    
-    
-    
+
     
     
     

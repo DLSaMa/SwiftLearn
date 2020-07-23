@@ -104,6 +104,20 @@ extension Music: CustomStringConvertible {
     }
 }
 
+//可以声明的时候直接继承 CustomStringConvertible 协议
+enum DownUpPhase: CustomStringConvertible {
+      case MovingDown, MovingUp
+      var description: String {
+          get {
+              switch self {
+              case .MovingDown:
+                  return "Moving Down"
+              case .MovingUp:
+                  return "Moving Up"
+              }
+          }
+      }
+  }
 
 class EnumFile: NSObject {
     
@@ -128,6 +142,5 @@ class EnumFile: NSObject {
          */
            
     }
-    
     
 }
