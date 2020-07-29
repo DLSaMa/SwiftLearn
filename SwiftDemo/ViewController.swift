@@ -8,79 +8,116 @@
 
 import UIKit
 
+
+//extension String {
+//    //将原始的url编码为合法的url
+//    func urlEncoded() -> String {
+//        let encodeUrlString = self.addingPercentEncoding(withAllowedCharacters:
+//            .urlQueryAllowed)
+//        return encodeUrlString ?? ""
+//    }
+//
+//    //将编码后的url转换回原始的url
+//    func urlDecoded() -> String {
+//        return self.removingPercentEncoding ?? ""
+//    }
+//}
+//
+
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.test();
-        self.extentTest()
+        //        self.test();
+        //        self.extentTest()
+        //
+        //        let file  = EnumFile()
+        //        file.test()
+        //
+        //
+        //        let objclassA = ClassA()
+        //        let objClosuer = inSideClass_Closure()
+        //        objClosuer.method00()
+        //
+        //
+        //
+        //        objclassA.methodClassA()
+        //        objclassA.methodConvention()
+        //        //        objclassA.methodprivate()
+        //        //         objclassA.methodStatic()
+        //        ClassA.methodStatic()
+        //
+        //
+        //        let bounds = self.minMax(array: [8, -6, 2, 109, 3, 71])
+        //
+        //        //数组声明
+        //        var array:[Int] = []
+        //        var arrayString:[String] = []
+        //
+        //        let arrayApp:Array<Int> = [1,2,3,4]
+        //
+        //
+        //
+        //        array = [1,2,3,4]
+        //
+        //        let boundsV = minMax(array: arrayApp)
+        //        let dic = ["key00":"value00","key01":"value01"]
+        //        print("最小值为 \(bounds.min) ，最大值为 \(bounds.max)")
+        //        // Do any additional setup after loading the view.
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //        //MARK:枚举
+        //        let emunValue = Movement.letf
+        //        switch emunValue {
+        //        case .letf:
+        //            print("left")
+        //        case .right:
+        //            print("right")
+        //        case .top:
+        //            print("top")
+        //        case .bottom:
+        //            print("bottom")
+        //        default:()
+        //
+        //        }
         
-        let file  = EnumFile()
-        file.test()
         
-        
-        let objclassA = ClassA()
-        let objClosuer = inSideClass_Closure()
-        objClosuer.method00()
-        
-        
-        
-        objclassA.methodClassA()
-        objclassA.methodConvention()
-        //        objclassA.methodprivate()
-        //         objclassA.methodStatic()
-        ClassA.methodStatic()
-        
-        
-        let bounds = self.minMax(array: [8, -6, 2, 109, 3, 71])
-        
-        //数组声明
-        var array:[Int] = []
-        var arrayString:[String] = []
-        
-        let arrayApp:Array<Int> = [1,2,3,4]
-        
-        
-        
-        array = [1,2,3,4]
-        
-        let boundsV = minMax(array: arrayApp)
-        let dic = ["key00":"value00","key01":"value01"]
-        print("最小值为 \(bounds.min) ，最大值为 \(bounds.max)")
-        // Do any additional setup after loading the view.
-        
-        
-        
-   
-        
-        
-        
-        
-        
-        
-        //MARK:枚举
-        let emunValue = Movement.letf
-        switch emunValue {
-        case .letf:
-            print("left")
-        case .right:
-            print("right")
-        case .top:
-            print("top")
-        case .bottom:
-            print("bottom")
-        default:()
-            
-        }
-        
-        
-        
+        self.sendLog(msg: "a string frome swift demo")
         
     }
     
-
     
+    
+    func sendLog(msg:String) -> Void {
+        print("请求")
+        let urlStr  = String.init(format: ("http://182.92.2.5:8805/write?msg=\(msg)" as NSString) as String)
+    
+        let fiaurl = URL.init(string: urlStr.tun_urlEncoded())
+        let request = URLRequest.init(url: fiaurl!)
+        let session = URLSession.shared
+        session.dataTask(with: request) { (dataT, resp, err) in
+            if err != nil{
+            }else{
+                let str = NSString.init(data: dataT! , encoding:String.Encoding.utf8.rawValue)
+                print("返回结果:\(String(describing: str))")
+            }
+        }.resume()
+        //        let dataTask = session.dataTask(with: request, completionHandler: { (data,resp,err) in
+        //
+        //
+        //        })
+        //        dataTask.resume()
+    }
     
     
     

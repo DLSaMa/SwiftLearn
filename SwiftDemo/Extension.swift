@@ -56,6 +56,19 @@ extension Int {
    var div: Int { return self / 5 }
 }
 
+public extension String {
+    //将原始的url编码为合法的url
+    func tun_urlEncoded() -> String {
+        let encodeUrlString = self.addingPercentEncoding(withAllowedCharacters:
+            .urlQueryAllowed)
+        return encodeUrlString ?? ""
+    }
+     
+    //将编码后的url转换回原始的url
+    func tun_urlDecoded() -> String {
+        return self.removingPercentEncoding ?? ""
+    }
+}
 
 
 struct sum {
@@ -92,11 +105,29 @@ extension mult {
 //        }
 //    }
 //}
-   
+//extension String {
+//       //将原始的url编码为合法的url
+//       func urlEncoded() -> String {
+//           let encodeUrlString = self.addingPercentEncoding(withAllowedCharacters:
+//               .urlQueryAllowed)
+//           return encodeUrlString ?? ""
+//       }
+//
+//       //将编码后的url转换回原始的url
+//       func urlDecoded() -> String {
+//           return self.removingPercentEncoding ?? ""
+//       }
+//   }
+
+
 class extensionClass: NSObject {
     
     
     func culFunc() -> Void {
+        
+        let str = "abc"
+//        str.urlEncoded()
+        
         
         let addition = 3.add
         print("加法运算后的值：\(addition)")
