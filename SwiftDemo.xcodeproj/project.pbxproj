@@ -14,6 +14,7 @@
 		7844F81D24C82AB80011FB14 /* EnumFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844F81C24C82AB80011FB14 /* EnumFile.swift */; };
 		7844F85324C966A20011FB14 /* ClosureFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844F85224C966A10011FB14 /* ClosureFile.swift */; };
 		788A03D024D1500200B01AE7 /* NSString+code.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A03CF24D1500200B01AE7 /* NSString+code.m */; };
+		788A03DD24D17EEF00B01AE7 /* String_Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A03DC24D17EEF00B01AE7 /* String_Log.swift */; };
 		78CF124424BDED1B009E1BF3 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CF124324BDED1A009E1BF3 /* TestSwift.swift */; };
 		78DCBA2724B4B0F5001819A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DCBA2624B4B0F5001819A5 /* AppDelegate.swift */; };
 		78DCBA2924B4B0F5001819A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DCBA2824B4B0F5001819A5 /* SceneDelegate.swift */; };
@@ -54,6 +55,7 @@
 		7844F85224C966A10011FB14 /* ClosureFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureFile.swift; sourceTree = "<group>"; };
 		788A03CE24D1500200B01AE7 /* NSString+code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+code.h"; sourceTree = "<group>"; };
 		788A03CF24D1500200B01AE7 /* NSString+code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+code.m"; sourceTree = "<group>"; };
+		788A03DC24D17EEF00B01AE7 /* String_Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Log.swift; sourceTree = "<group>"; };
 		78CF124324BDED1A009E1BF3 /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 		78DCBA2324B4B0F5001819A5 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DCBA2624B4B0F5001819A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				7844F81A24C7D0CB0011FB14 /* Extension.swift */,
 				7844F81C24C82AB80011FB14 /* EnumFile.swift */,
 				7844F85224C966A10011FB14 /* ClosureFile.swift */,
+				788A03DC24D17EEF00B01AE7 /* String_Log.swift */,
 				788A03CE24D1500200B01AE7 /* NSString+code.h */,
 				788A03CF24D1500200B01AE7 /* NSString+code.m */,
 				7837CDFD24C73E3C008641A3 /* OCFile.h */,
@@ -298,6 +301,7 @@
 				78DCBA2B24B4B0F5001819A5 /* ViewController.swift in Sources */,
 				7837CDFF24C73E3C008641A3 /* OCFile.m in Sources */,
 				788A03D024D1500200B01AE7 /* NSString+code.m in Sources */,
+				788A03DD24D17EEF00B01AE7 /* String_Log.swift in Sources */,
 				7844F85324C966A20011FB14 /* ClosureFile.swift in Sources */,
 				78CF124424BDED1B009E1BF3 /* TestSwift.swift in Sources */,
 				78DCBA2724B4B0F5001819A5 /* AppDelegate.swift in Sources */,

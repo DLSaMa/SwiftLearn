@@ -92,7 +92,12 @@ class ViewController: UIViewController {
         //        }
         
         
-        self.sendLog(msg: "a string frome swift demo")
+//        self.sendLog(msg: "a string frome swift demo")
+        
+        let name  = String.init(format: "\(#function) in \(object_getClassName(self))")
+       
+        self.sendLog(msg: name)
+//        print("\(#function) in \(#file)")
         
     }
     
