@@ -45,6 +45,12 @@ public class Closure: NSObject {
             return valueA + valueB;
         }(10,5)  //和上面的写法一样
         
+        let closure01 = {
+            (va:String,va0:Int) -> Void in
+//            return 2
+            
+        }
+        
         
         let a = Closures(10)
         let b = Closures00
@@ -72,9 +78,9 @@ public class Closure: NSObject {
         }
         
         
-        let methodValue = methodReturn(true)(10,10)
+        _ = methodReturn(true)(10,10)
         //        let closureValue = closure(flag:true)(10,10)//会报错
-        let closureValue = closure(true)(10,10)//不报错
+        _ = closure(true)(10,10)//不报错
         
     }
     
@@ -94,7 +100,7 @@ public class Closure: NSObject {
         //        callback(3,4)
     }
     
-    
+    //尾随闭包
     func loadReuqest01(v1:Int,callBack:@escaping ()->()) -> Void {
         
         

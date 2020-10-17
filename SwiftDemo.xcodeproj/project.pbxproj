@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782E034B24EFC16B004AE421 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E034A24EFC16B004AE421 /* Protocol.swift */; };
+		782E034D24EFC1CF004AE421 /* Protocol_Test00.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E034C24EFC1CF004AE421 /* Protocol_Test00.swift */; };
 		7837CDFB24C73E1C008641A3 /* lazyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7837CDFA24C73E1B008641A3 /* lazyTest.swift */; };
 		7837CDFF24C73E3C008641A3 /* OCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CDFE24C73E3C008641A3 /* OCFile.m */; };
 		7837CE0124C73F98008641A3 /* VisitControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7837CE0024C73F98008641A3 /* VisitControl.swift */; };
 		7844F81B24C7D0CB0011FB14 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844F81A24C7D0CB0011FB14 /* Extension.swift */; };
 		7844F81D24C82AB80011FB14 /* EnumFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844F81C24C82AB80011FB14 /* EnumFile.swift */; };
 		7844F85324C966A20011FB14 /* ClosureFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844F85224C966A10011FB14 /* ClosureFile.swift */; };
+		784D95D7251B694D00CC0265 /* ViewController_B.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D95D6251B694D00CC0265 /* ViewController_B.swift */; };
 		788A03D024D1500200B01AE7 /* NSString+code.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A03CF24D1500200B01AE7 /* NSString+code.m */; };
 		788A03DD24D17EEF00B01AE7 /* String_Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A03DC24D17EEF00B01AE7 /* String_Log.swift */; };
+		789888952509C5E600B66153 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 789888942509C5E600B66153 /* Tool.m */; };
 		78CF124424BDED1B009E1BF3 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CF124324BDED1A009E1BF3 /* TestSwift.swift */; };
 		78DCBA2724B4B0F5001819A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DCBA2624B4B0F5001819A5 /* AppDelegate.swift */; };
 		78DCBA2924B4B0F5001819A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DCBA2824B4B0F5001819A5 /* SceneDelegate.swift */; };
@@ -45,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		782E034A24EFC16B004AE421 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		782E034C24EFC1CF004AE421 /* Protocol_Test00.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol_Test00.swift; sourceTree = "<group>"; };
 		7837CDFA24C73E1B008641A3 /* lazyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lazyTest.swift; sourceTree = "<group>"; };
 		7837CDFC24C73E3B008641A3 /* SwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		7837CDFD24C73E3C008641A3 /* OCFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCFile.h; sourceTree = "<group>"; };
@@ -53,9 +59,12 @@
 		7844F81A24C7D0CB0011FB14 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		7844F81C24C82AB80011FB14 /* EnumFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumFile.swift; sourceTree = "<group>"; };
 		7844F85224C966A10011FB14 /* ClosureFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureFile.swift; sourceTree = "<group>"; };
+		784D95D6251B694D00CC0265 /* ViewController_B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_B.swift; sourceTree = "<group>"; };
 		788A03CE24D1500200B01AE7 /* NSString+code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+code.h"; sourceTree = "<group>"; };
 		788A03CF24D1500200B01AE7 /* NSString+code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+code.m"; sourceTree = "<group>"; };
 		788A03DC24D17EEF00B01AE7 /* String_Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Log.swift; sourceTree = "<group>"; };
+		789888932509C5E600B66153 /* Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		789888942509C5E600B66153 /* Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 		78CF124324BDED1A009E1BF3 /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 		78DCBA2324B4B0F5001819A5 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DCBA2624B4B0F5001819A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +134,7 @@
 				78DCBA2624B4B0F5001819A5 /* AppDelegate.swift */,
 				78DCBA2824B4B0F5001819A5 /* SceneDelegate.swift */,
 				78DCBA2A24B4B0F5001819A5 /* ViewController.swift */,
+				784D95D6251B694D00CC0265 /* ViewController_B.swift */,
 				78DCBA5624B4CC8A001819A5 /* ClassA.swift */,
 				78CF124324BDED1A009E1BF3 /* TestSwift.swift */,
 				7837CDFA24C73E1B008641A3 /* lazyTest.swift */,
@@ -132,11 +142,15 @@
 				7844F81A24C7D0CB0011FB14 /* Extension.swift */,
 				7844F81C24C82AB80011FB14 /* EnumFile.swift */,
 				7844F85224C966A10011FB14 /* ClosureFile.swift */,
+				782E034A24EFC16B004AE421 /* Protocol.swift */,
+				782E034C24EFC1CF004AE421 /* Protocol_Test00.swift */,
 				788A03DC24D17EEF00B01AE7 /* String_Log.swift */,
 				788A03CE24D1500200B01AE7 /* NSString+code.h */,
 				788A03CF24D1500200B01AE7 /* NSString+code.m */,
 				7837CDFD24C73E3C008641A3 /* OCFile.h */,
 				7837CDFE24C73E3C008641A3 /* OCFile.m */,
+				789888932509C5E600B66153 /* Tool.h */,
+				789888942509C5E600B66153 /* Tool.m */,
 				78DCBA2C24B4B0F5001819A5 /* Main.storyboard */,
 				78DCBA2F24B4B0FB001819A5 /* Assets.xcassets */,
 				78DCBA3124B4B0FB001819A5 /* LaunchScreen.storyboard */,
@@ -297,11 +311,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7844F81D24C82AB80011FB14 /* EnumFile.swift in Sources */,
+				784D95D7251B694D00CC0265 /* ViewController_B.swift in Sources */,
 				7844F81B24C7D0CB0011FB14 /* Extension.swift in Sources */,
 				78DCBA2B24B4B0F5001819A5 /* ViewController.swift in Sources */,
+				782E034B24EFC16B004AE421 /* Protocol.swift in Sources */,
 				7837CDFF24C73E3C008641A3 /* OCFile.m in Sources */,
 				788A03D024D1500200B01AE7 /* NSString+code.m in Sources */,
 				788A03DD24D17EEF00B01AE7 /* String_Log.swift in Sources */,
+				782E034D24EFC1CF004AE421 /* Protocol_Test00.swift in Sources */,
 				7844F85324C966A20011FB14 /* ClosureFile.swift in Sources */,
 				78CF124424BDED1B009E1BF3 /* TestSwift.swift in Sources */,
 				78DCBA2724B4B0F5001819A5 /* AppDelegate.swift in Sources */,
@@ -309,6 +326,7 @@
 				7837CE0124C73F98008641A3 /* VisitControl.swift in Sources */,
 				78DCBA2924B4B0F5001819A5 /* SceneDelegate.swift in Sources */,
 				7837CDFB24C73E1C008641A3 /* lazyTest.swift in Sources */,
+				789888952509C5E600B66153 /* Tool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

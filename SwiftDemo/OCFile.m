@@ -7,6 +7,7 @@
 //
 
 #import "OCFile.h"
+#import "SwiftDemo-Swift.h"
 
 @implementation OCFile
 //方法声明实现
@@ -35,5 +36,8 @@ static void sayHello(){
     //函数调用
     sayHi();
     sayHello();
+    
+    TestSwift * obj = [[TestSwift alloc]init];
+    [obj swiftMethodWithValue:2];
 }
 @end
